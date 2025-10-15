@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom"
-import { Home } from "./Home"
 
 export const Navbaar = () => {
     return (

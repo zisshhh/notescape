@@ -45,7 +45,7 @@ export const pasteSlice = createSlice({
             const index = state.pastes.findIndex(item => item._id === pasteId)
             if(index >= 0){
                 state.pastes.splice(index, 1);
-                localStorage.setItem("pastes", JSON.stringify(state))
+                localStorage.setItem("pastes", JSON.stringify(state.pastes))
                 toast("Paste deleted!")
             }
         }
